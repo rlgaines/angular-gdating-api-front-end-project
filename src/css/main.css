@@ -1,1 +1,43 @@
-/* add custom styles */
+
+#searchBox{
+  margin-left: 60vw;
+  margin-top: 40vh;
+  width: 40vw;
+}
+#mainBody{
+  padding: 0;
+}
+#memberFull{
+  margin-left: 40vw;
+  width: 60vw;
+  padding: 2%;
+}
+#memberListItem{
+  height: 100%;
+  width: 100%;
+  
+}
+#memberListItem img{
+  width: 100%;
+  height: 100%;
+}
+#mainController li{
+  padding:0;
+  margin-bottom: 2%;
+  margin-left: 4%;
+}
+#listright{
+  float: right;
+  
+}
+#listleft{
+  float: left;
+ margin-left: 2%;
+ margin-bottom: 2%;
+}
+#showThis{
+  background: white;
+}
+ul{
+  padding:0;
+}/* add custom styles */

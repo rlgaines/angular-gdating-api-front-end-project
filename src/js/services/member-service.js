@@ -19,7 +19,7 @@
     var user = {};
     return {
       getMembers: function() {
-        console.log('user')
+        // console.log('user')
         return $http.get('https://galvanize-student-apis.herokuapp.com/gdating/members');
       }
     };

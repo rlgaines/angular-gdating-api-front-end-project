@@ -1,9 +1,15 @@
- <nav class="navbar navbar-default">
-  <a href="#/logout"><h5>Logout</h5></a>
+  <nav class="navbar navbar-default">
+  <a href="#/"><h5>Home</h5></a>
+    <a href="#/logout"><h5>Logout</h5></a>
  </nav>
- <div class="row">
-  <div class="col-md-5" ng-repeat="members in getMembers">
-  <h2>{{members.names.firstName}}</h2>
-  </div>
+ <div id="navbar" class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+   <div class ="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-xs-2">
+       gDates
+   </div>
+   <div class ="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-xs-2">
+     <a href ng-click="search = !search">Search</a>
+
+   </div>
  </div>
+        
 <member></member>
