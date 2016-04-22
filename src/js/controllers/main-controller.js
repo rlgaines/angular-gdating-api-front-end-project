@@ -1,24 +1,25 @@
-(function(){
-	'use strict';
+(function () {
 
-angular.module('myApp').controller('mainController', mainController)
+  'use strict';
 
-  mainController.$inject = ['$scope', '$http'];
+  angular.module('myApp')
+    .controller('mainController', mainController);
 
-  function mainController($scope, $http) {
-	$scope.getMembers = function(){
-		console.log('win')
-		$http({
-			method:'GET',
-			url: 'http://galvanize-student-apis.herokuapp.com/gdating/members'
-		})
-		.then(function(results){
-			console.log(results.data.data[0]);
-			$scope.members = results.data.data;
-		})
-	}
-}
+  mainController.$inject = ['$rootScope', '$scope', '$location', 'memberService'];
+
+  function mainController($rootScope, $scope, $location, memberService) {
+    $scope.user = {};
+    memberService.getMembers()
+        .then(function(user) {
+          console.log(user.data.data[0]);
+          $scope.members = user.data.data
+        })
+        .catch(function(err) {
+          // check status code, send appropriate message
+          console.log(err);
+        });
+    };
+  
 
 })();
-
 

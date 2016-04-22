@@ -1,2 +1,9 @@
-<h1>HOME PAGE</h1>
-<a href="#/logout">Logout</a>
+ <nav class="navbar navbar-default">
+  <a href="#/logout"><h5>Logout</h5></a>
+ </nav>
+ <div class="row">
+  <div class="col-md-5" ng-repeat="members in getMembers">
+  <h2>{{members.names.firstName}}</h2>
+  </div>
+ </div>
+<member></member>
