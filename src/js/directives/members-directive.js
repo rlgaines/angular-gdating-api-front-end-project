@@ -33,7 +33,6 @@
        <div class="container" id="memberFull" ng-show="showthis" single-member>
            
        </div>
-
        </div>
                
    </div>
